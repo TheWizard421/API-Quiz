@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Star Wars Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <header>
+        <ul class="nav">
+            <li class="nav-item">
+              <button type="button" id="HighscoreButton" class="btn btn-dark">View Highscores</button>
+            </li>
+        </ul>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <div id="Timer">
+                <h4 id="countdown"></h4>
+                </div>
+            </li>
+        </ul>
+      </header>
+    
+    <div class="container">
+      <div id="quiz-container">
+        <div class="justify-content-center">
+            <div class="text-center">
+                <h1>Star Wars Quiz Challenge</h1>
+            </div>
+            <figure class="text-center">
+                <p>
+                Try to answer the following 
+                questions as quickly as possible within the time limit.
+                Keep in mind that incorrect answers will penalize your 
+                score and time by 10 seconds.
+                </p>
+            </figure>
+        </div>
+
+        <div id="questionBox">
+          <h4 id="question"></h4>
+          <button id="answerOne"></button>
+          <button id="answerTwo"></button>
+          <button id="answerThree"></button>
+          <button id="answerFour"></button>
+        </div>
+        
+        
+        <div class="text-center">
+            <button type="button" id="startButton" class="btn btn-dark">Start Quiz
+            </button>
+        </div>
+      </div>
+    </div>
+    <div id="initial-box" style="display: none;">
+      <input type="text" id="initial-text" placeholder="Enter initials">
+      <button type="button" id="initial-submit" class="btn btn-dark">Submit</button>
+    </div>
+    <div id="highscore-container" style="display: none;">
+      <h1>Highscore Rankings</h1>
+      <ul id="score-list"></ul>
+      <button type='button' id="exit-list" class="btn btn-dark">Return to Main Menu</button>
+    </div>
+  </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
